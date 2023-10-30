@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        table{
+            border: 1px solid whitesmoke; /*to add border in our table */
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #1b1b1b;
+        }
+        
+        input[type="button"]{
+            width: 100%;
+            padding: 40px 50px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50%;
+        }
+        input[type="text"]{
+            width: 78%;
+            padding: 20px 30px;
+            border-radius: 5px;
+        }
+        input[type="button"]:hover{
+            background-color: whitesmoke;
+            
+        }
+        input[type="button"][value="="],
+        input[type="button"][value="+"], 
+        input[type="button"][value="-"], 
+        input[type="button"][value="*"], 
+        input[type="button"][value="/"] {
+        background-color: black; /* Change the background color */
+        color: #f5c71a; /* Change the text color */
+        }
+        input[type="button"][value="C"]{
+            background-color: #f5c71a;
+            color: black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr> <!--ROW1-->
+            <td colspan="3">
+                <input type="text" id="result">
+            </td>
+            <td><input type="button" value="C"></td>
+        </tr>
+        <tr> <!--ROW2-->
+            <td><input type="button" value="1"></td>
+            <td><input type="button" value="2"></td>
+            <td><input type="button" value="3"></td>
+            <td><input type="button" value="/"></td>
+        </tr>
+        <tr> <!--ROW3-->
+            <td><input type="button" value="4"></td>
+            <td><input type="button" value="5"></td>
+            <td><input type="button" value="6"></td>
+            <td><input type="button" value="*"></td>
+        </tr>
+        <tr> <!--ROW4-->
+            <td><input type="button" value="7"></td>
+            <td><input type="button" value="8"></td>
+            <td><input type="button" value="9"></td>
+            <td><input type="button" value="-"></td>
+        </tr>
+        <tr> <!--ROW5-->
+            <td><input type="button" value="."></td>
+            <td><input type="button" value="0"></td>
+            <td id="equal"><input type="button" value="="></td>
+            <td><input type="button" value="+"></td>
+        </tr>
+    </table>
+</body>
+</html>
